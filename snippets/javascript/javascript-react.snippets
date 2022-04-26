@@ -192,14 +192,14 @@ snippet rdcp ReactDOM.createPortal
 snippet rinit 初始化react组件内容
 	import React from 'react'
 
-	interface interface ${0:${VISUAL}}Props {
+	interface interface ${1}Props {
 
 	}
 
-	const ${0:${VISUAL}}: React.FC<${0:${VISUAL}}Props> = (props) => {
-		return <>${2}</>"
+	const $1: React.FC<$1Props> = (props) => {
+		return <>${2:hi}</>"
 	}
 
-	${0:${VISUAL}}.displayName = '${0:${VISUAL}}'
-	export default ${0:${VISUAL}}
+	$1.displayName = '$1'
+	export default $1
 	endsnippet
