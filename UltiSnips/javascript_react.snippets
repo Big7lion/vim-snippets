@@ -54,3 +54,20 @@ endsnippet
 snippet irc "import React and Component"
 import React, { Component } from "react"
 endsnippet
+
+
+snippet rinit "初始化react组件内容" b
+import React from 'react'
+
+interface interface ${1:ComponentName}Props {
+
+}
+
+const ${1}: React.FC<${1}Props> = (props) => {",
+  return <>${2:Content}</>",
+"}
+
+${1}.displayName = "${1}"
+export default ${1};
+endsnippet
+	
