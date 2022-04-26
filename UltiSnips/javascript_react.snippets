@@ -59,15 +59,15 @@ endsnippet
 snippet rinit "初始化react组件内容" b
 import React from 'react'
 
-interface interface ${1:ComponentName}Props {
+interface interface ${1}Props {
 
 }
 
-const ${1}: React.FC<${1}Props> = (props) => {",
-  return <>${2:Content}</>",
-"}
+const ${1}: React.FC<${1}Props> = (props) => {
+  return <>${2}</>"
+}
 
-${1}.displayName = "${1}"
-export default ${1};
+${1}.displayName = '${1}'
+export default ${1}
 endsnippet
 	
